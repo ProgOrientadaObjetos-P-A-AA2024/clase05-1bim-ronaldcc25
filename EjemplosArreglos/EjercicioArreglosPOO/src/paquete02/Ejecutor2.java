@@ -18,8 +18,16 @@ public class Ejecutor2 {
         LibretaCalificacion lista = new LibretaCalificacion(n, notas);
         
         lista.establecerPromedio();
+        /* 
+        al momento que comentamos la linea 20 el programa ya no llama al metodo
+        para tomar el valor de esa varibale
+        */
         lista.establecerPromedioCualitativo();
-        
+        /*
+        en este caso sucede lo mismo si comentamos la linea 25 ya no estamos 
+        recibiendo ningun valor para la variable que esta dentro del metodo
+        entonces toma el valor por defecto dicha variable
+        */
         System.out.printf("%s",lista);
     }
     
