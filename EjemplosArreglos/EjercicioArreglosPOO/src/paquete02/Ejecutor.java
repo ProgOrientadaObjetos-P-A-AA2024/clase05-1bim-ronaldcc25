@@ -7,18 +7,20 @@ package paquete02;
 
 import java.util.Scanner;
 import paquete01.LibretaCalificacion;
+
 /**
  *
  * @author reroes
  */
 public class Ejecutor {
+
     public static void main(String[] args) {
         // listado de variables para ingreso de datos por teclado
         Scanner entrada = new Scanner(System.in);
         String nombreEstudiante;
-        double [] calificacionesEstudiante;
+        double[] calificacionesEstudiante;
         int numerocalificaciones;
-        
+
         // Ingreso de valores por teclado
         System.out.println("Ingrese el nombre del estudiante");
         nombreEstudiante = entrada.nextLine();
@@ -27,12 +29,12 @@ public class Ejecutor {
         // con el numerocalificaciones se crea el objeto arreglo de
         // calificaciones tipo double
         calificacionesEstudiante = new double[numerocalificaciones];
-        
+
         for (int i = 0; i < numerocalificaciones; i++) {
-            System.out.printf("Ingrese calificación %d\n", i+1);
+            System.out.printf("Ingrese calificación %d\n", i + 1);
             calificacionesEstudiante[i] = entrada.nextDouble();
         }
-        
+
         // con el ingreso del nombre del estudiante y el ingreso del conjunto
         // de calificaciones; se procede a crear el objeto de tipo
         // LibretaCalificacion
