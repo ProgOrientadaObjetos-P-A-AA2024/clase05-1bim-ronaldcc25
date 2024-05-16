@@ -17,7 +17,16 @@ public class Ejecutor {
         Profesor profesor2 = new Profesor("Gregory Walsh", "nombramiento");
         Profesor profesor3 = new Profesor("Kevin Page", "nombramiento");
         
-                
+        c1.establecerProfesor(profesor1);
+        c2.establecerProfesor(profesor2);
+        c3.establecerProfesor(profesor3);
+        /*
+        estos 3 llamados que estan en las lineas 20 21 22 es para darle el nombre
+        del profesor que tenemos en los objetos es decir que reemplazamos los 
+        valores que tenemos gracias al constructor y con el establecerProfesor
+        reemplazamos dichos valores
+        */
+        
         Calificacion [] lista = {c1, c2, c3}; 
         
         LibretaCalificacion libreta1 = new LibretaCalificacion("Justin Powers",
